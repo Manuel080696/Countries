@@ -1,0 +1,139 @@
+.countryCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5ede3;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  min-height: 30rem;
+  border-top: 3px dashed #8c82809a;
+  border-bottom: 3px dashed #8c82809a;
+}
+
+h2 {
+  color: #736466;
+  font-size: 3.7rem;
+  padding-top: 2rem;
+  z-index: 10;
+}
+
+.logoMail {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  align-self: flex-end;
+  height: 10rem;
+  z-index: 0;
+}
+
+.logoAirMail {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  align-self: flex-end;
+  height: 10rem;
+  z-index: 1;
+}
+
+.countryCard span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 90%;
+  height: 100%;
+}
+
+.main section.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 25rem;
+  width: 40%;
+  max-width: 25rem;
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+  border: 2px dashed #8c82809a;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.main section.data ul {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+
+.main section.data ul::-webkit-scrollbar {
+  background-color: #b8b1b09a;
+}
+
+.main section.data ul::-webkit-scrollbar-thumb {
+  background-color: #9c93929a;
+}
+
+.main section.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.main section.data img {
+  width: auto;
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.data ul {
+  list-style: none;
+}
+
+.data ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.data ul li p {
+  font-size: 1.1rem;
+  z-index: 10;
+}
+
+#map {
+  position: relative;
+  width: 80%;
+  height: 25rem;
+  align-self: center;
+  margin-left: 2.5rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+div#map div.mapObject {
+  border: 5px double #8c82809a;
+}
+
+.mapObject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25rem;
+  align-self: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .countryCard span {
+    flex-direction: row;
+  }
+}

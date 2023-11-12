@@ -1,0 +1,12 @@
+.headerFather {
+  display: flex;
+  height: 6rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+
+.headerFather img {
+  width: 12rem;
+}
